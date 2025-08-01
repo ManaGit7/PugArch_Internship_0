@@ -1,0 +1,91 @@
+create database Arch_db;
+
+show databases;
+
+use Arch_db;
+
+create table clients (
+	client_id int primary key auto_increment,
+    company_name varchar(50),
+    phone varchar(20),
+    email varchar(40),
+    record_date varchar(10)
+) auto_increment=100 ;
+
+-- Gives table description
+describe clients;
+
+create table products (
+	product_id int primary key auto_increment,
+    product_name varchar(50),
+    domain varchar(30),
+    version varchar(15)
+) auto_increment=200;
+
+describe products;
+
+insert into clients (company_name, phone, email, record_date)
+values
+	('SmartAssist Solutions', '+91 9876543210', 'mailId@smartsolns.in', '12-01-24'),
+    ('EduTech Pvt. Ltd', '+91 8901234567', 'mail1@edutech.in', '23-01-24'),
+    ('GeoGebra Technologies', '+91 7890123456', 'mail2@geogebra.com', '15-02-24'),
+    ('FutureAI services', '+234 6789012345', 'mail3@futureai.com', '18-08-24'),
+    ('PanoRama Technologies', '+62 5678901234', 'mail4@panorama.com', '12-01-25');
+    
+insert into products (product_name, domain, version)
+values
+	('Smart Employee Manager', 'Management System', '2.2'),
+    ('Secure Facility System', 'Management System', '1.8'),
+    ('Automation System', 'AI', '2.6'),
+    ('NeuroDesk', 'IOT', '1.9.1');
+
+-- Displays all tables in the database
+show tables;
+
+select * from clients;
+select * from products;
+
+-- Retrieves first 3 rows
+select * from clients limit 3;
+
+-- where clause for condition 
+select product_name
+from products
+where domain='Management System';
+
+-- Advanced Select
+select distinct domain
+from products
+where product_name like 'S%';
+
+select * from clients
+where phone like '+91%';
+
+select * from clients
+limit 5 offset 2;
+
+select * from products
+where domain in ('IOT', 'AI');
+
+select domain, count(*) as domain_count
+from products
+group by domain;
+
+-- update and delete
+update clients 
+set record_date='18-07-24'
+where company_name='GeoGebra Technologies';
+
+delete from clients
+where client_id=202;
+
+-- Alter
+alter table products
+add column release_date varchar(20);
+
+select * from products;
+
+alter table products drop column release_date;
+
+
+    
