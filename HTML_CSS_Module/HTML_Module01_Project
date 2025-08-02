@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Chocolate Mug Cake Recipe
+        </title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>5-Minute Chocolate Mug Cake</h1>
+            <p>A quick and delicious dessert made in your microwave or Kadhai!</p>
+        </header>
+
+        <img src="../Images/MugCake.jpg" alt="A delicious chocolate mug cake" width="300">
+
+        <main>
+
+            <section>
+                <h2>What You’ll Need</h2>
+            </section>
+
+            <section>
+                <h2>🛒 Ingredients</h2>
+                <ul>
+                    <li>4 tbsp all-purpose flour</li>
+                    <li>4 tbsp granulated sugar</li>
+                    <li>2 tbsp cocoa powder</li>
+                    <li>1/8 tsp baking powder</li>
+                    <li>3 tbsp milk</li>
+                    <li>2 tbsp vegetable oil</li>
+                    <li>1/4 tsp vanilla extract</li>
+                    <li>A pinch of salt</li>
+                    <li>Optional: chocolate chips or chopped nuts</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>👨‍🍳 Instructions</h2>
+                <ol>
+                    <li>In a microwave-safe mug, mix flour, sugar, cocoa powder, baking powder, and salt.</li>
+                    <li>Add milk, oil, and vanilla extract. Stir until smooth.</li>
+                    <li>Fold in chocolate chips or nuts if using.</li>
+                    <li>Microwave on high for 1 minute and 30 seconds (time may vary slightly).</li>
+                    <li>Let it cool for a minute... then dig in with a spoon!</li>
+                </ol>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>HTML practice project — Mug Cake🧁</p>
+        </footer>
+
+    </body>
+
+</html>
